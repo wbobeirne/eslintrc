@@ -25,6 +25,7 @@ const eslintConf = {
 	env: {
 		browser: true,
 		es6: true,
+		node: true,
 	},
 	rules: {
 		/**
@@ -74,6 +75,7 @@ const eslintConf = {
 		"no-class-assign": SEV1,
 		"max-statements-per-line": [SEV1, { max: 1 }],
 		"no-unreachable": SEV2,
+		"valid-jsdoc": [SEV2, { requireReturn: false }],
 
 		/**
 		 * STYLE
@@ -135,6 +137,7 @@ const eslintConf = {
 
 // Babel rules
 if (hasBabel) {
+	eslintConf.environment.commonjs = true;
 	eslintConf.rules = Object.assign({}, eslintConf.rules, {
 		"no-var": SEV1,
 		"prefer-spread": SEV1,
