@@ -100,7 +100,6 @@ const eslintConf = {
 		"comma-style": [SEV3, "last"],
 		"no-extra-semi": SEV2,
 		"camelcase": [SEV3, { properties: "never" }],
-		"new-cap": [SEV3],
 
 		// Comments
 		"spaced-comment": SEV3,
@@ -111,7 +110,6 @@ const eslintConf = {
 		// Objects
 		"no-new-object": SEV3,
 		"object-shorthand": hasBabel ? [SEV3, "always"] : "off",
-		"object-curly-newline": [SEV3, { multiline: true }],
 		"dot-notation": [SEV3, { allowKeywords: true }],
 		"object-curly-spacing": [SEV3, "always"],
 
