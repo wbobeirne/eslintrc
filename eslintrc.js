@@ -55,7 +55,7 @@ const eslintConf = {
 		 * that come from not using best practices.
 		 */
 
-		"no-loop-func": SEV1,
+		"no-bitwise": SEV1,
 		"no-param-reassign": SEV2,
 		"no-ex-assign": SEV2,
 		"no-new-func": SEV1,
@@ -76,6 +76,7 @@ const eslintConf = {
 		"max-statements-per-line": [SEV1, { max: 1 }],
 		"no-unreachable": SEV2,
 		"valid-jsdoc": [SEV2, { requireReturn: false }],
+		"curly": [SEV2, "all"],
 
 		/**
 		 * STYLE
